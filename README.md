@@ -5,7 +5,9 @@
   </picture>
 </p>
 
-<h1 align="center">MAG AI Connector</h1>
+<h1 align="center">
+  <img src="assets/app-icon.png" alt="" width="40" height="40" align="center">&nbsp;MAG AI Connector
+</h1>
 
 <p align="center">
   Connect your Autodesk design apps to AI assistants, in a few clicks.<br>
