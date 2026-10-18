@@ -6,7 +6,7 @@
 </p>
 
 <h1 align="center">
-  <img src="assets/app-icon.png" alt="" width="40" height="40" align="center">&nbsp;MAG AI Connector
+  <img src="assets/app-icon.png" alt="" width="40" height="40" align="absmiddle">&nbsp;MAG AI Connector
 </h1>
 
 <p align="center">
