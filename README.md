@@ -21,12 +21,28 @@ MAG AI Connector lets AI assistants such as **Claude**, **Codex** and **Cursor**
 elements, check clashes, draw, and more. You choose which design apps and which AI apps to connect; the app installs
 everything they need, connects them, and tests the connection for you. No programming is needed.
 
+## What it does
+
+- **Sets everything up for you.** Pick your design apps and AI apps; the app installs what each one needs and
+  connects them. Design apps that are not installed, or only in versions that are not supported, are shown faded
+  with a note saying which versions work.
+- **Tests the connection.** One click checks each design app, starts each MCP server, and confirms every AI app is
+  set up with your current settings. It tells you in plain words what to fix.
+- **Keeps you in control.** Choose what the AI may change: approvals in Revit and Civil 3D, read-only modes for
+  Navisworks and AutoCAD. Read-only means the AI only gets tools that look, including tools added in future versions.
+- **Protects your models.** The Navisworks add-in only accepts requests from MAG AI Connector, so a web page open in
+  your browser cannot send it commands.
+- **Updates itself safely.** The app tells you when a new version is out and installs it in about a minute. It
+  installs only updates signed by MAGtelligent, and reconnects your AI apps afterwards.
+- **Stays out of your way.** It uses its own copy of Python, so another Python on your PC (for example from GIS
+  software) cannot interfere, and a pyRevit setup your company already has is left as it is.
+
 ## Supported apps
 
 | Design apps | Versions |
 |---|---|
 | Autodesk Revit | 2024 – 2027 |
-| Autodesk Navisworks Manage / Simulate | 2025 – 2027 |
+| Autodesk Navisworks Manage / Simulate | 2025 – 2027 (not Freedom) |
 | Autodesk Civil 3D | 2025 – 2027 |
 | Autodesk AutoCAD (and products built on it) | 2018 and newer (not AutoCAD LT) |
 
@@ -49,14 +65,15 @@ app, open its GitHub page:
 
 - **Version installed** is the exact version the latest release was tested with; MAG AI Connector downloads that
   version, not the newest one, so the tools on the project's main page may differ.
-- MAG AI Connector makes a few small changes for safety and reliability, for example the read-only modes for
-  Navisworks and AutoCAD (under **Settings**) and making the AutoCAD server use the AutoCAD that is already open
-  instead of starting one.
+- MAG AI Connector makes a few small changes for safety and reliability: the read-only modes for Navisworks and
+  AutoCAD (under **Settings**), a lock so the Navisworks add-in only answers MAG AI Connector, and making the AutoCAD
+  server use the AutoCAD that is already open instead of starting one.
 - These projects belong to their authors and are not part of MAG AI Connector.
 
 ## Install
 
 1. Download **MAGAIConnector-Setup-&lt;version&gt;.exe** from the [latest release](https://github.com/MAGtelligent/MAGAIConnector/releases/latest).
+   You don't need the `.sig` file next to it; the app uses it to check updates.
 2. Run it. No administrator rights are needed.
    If Windows shows **"Windows protected your PC"**, click **More info**, then **Run anyway**.
 3. Start **MAG AI Connector** and follow the steps: choose your apps, click **Install**, connect, and test.
@@ -70,6 +87,8 @@ app, open its GitHub page:
   destructive changes.
 - Settings files of your AI apps are backed up before they are changed, and only the MAG AI Connector entries are
   touched.
+- **Updating:** when a new version is out, a banner offers **Update now** (or use **Settings › Updates**). After an
+  update, restart your AI apps. If the release notes say so, open **Setup** and click **Install** once more.
 - To remove the app, use **Settings › Apps › Installed apps** in Windows. Disconnect your AI apps inside MAG AI
   Connector first if you also want their entries removed.
 
