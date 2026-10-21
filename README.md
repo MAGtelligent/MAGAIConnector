@@ -89,6 +89,9 @@ app, open its GitHub page:
   touched.
 - **Updating:** when a new version is out, a banner offers **Update now** (or use **Settings › Updates**). After an
   update, restart your AI apps. If the release notes say so, open **Setup** and click **Install** once more.
+- **Usage statistics:** the app sends anonymous statistics to MAGtelligent so we can find and fix setup problems:
+  the app and Windows version, when it starts, and which setup steps and connection tests succeed or fail, with
+  how long they took. No names, file paths, drawings, models or error messages are sent.
 - To remove the app, use **Settings › Apps › Installed apps** in Windows. Disconnect your AI apps inside MAG AI
   Connector first if you also want their entries removed.
 
